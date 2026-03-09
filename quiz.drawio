@@ -1,0 +1,54 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.5.2 Chrome/142.0.7444.265 Electron/39.6.1 Safari/537.36" version="29.5.2">
+  <diagram name="Seite-1" id="aymZkJFXRdLfCPPxjPla">
+    <mxGraphModel dx="1519" dy="595" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="S7z_CHEJxrtu_Kwbffms-13" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;&amp;nbsp; 1 *&amp;nbsp; &amp;nbsp;Questions&lt;/div&gt;" vertex="1">
+          <mxGeometry height="170" width="270" x="-590" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="S7z_CHEJxrtu_Kwbffms-14" parent="S7z_CHEJxrtu_Kwbffms-13" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="-text: String&lt;div&gt;-awnser: String&lt;/div&gt;&lt;div&gt;-level: int&lt;/div&gt;" vertex="1">
+          <mxGeometry height="64" width="270" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="S7z_CHEJxrtu_Kwbffms-16" parent="S7z_CHEJxrtu_Kwbffms-13" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ questions(text: String , awnser: String)&lt;div&gt;+getText(): String&lt;/div&gt;&lt;div&gt;+checkAwnser(eingabe : String):boolean&lt;/div&gt;" vertex="1">
+          <mxGeometry height="72" width="270" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="S7z_CHEJxrtu_Kwbffms-15" parent="S7z_CHEJxrtu_Kwbffms-13" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="270" y="162" as="geometry" />
+        </mxCell>
+        <mxCell id="S7z_CHEJxrtu_Kwbffms-22" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&amp;nbsp; &amp;nbsp;1&amp;nbsp; Quiz-Manager" vertex="1">
+          <mxGeometry height="180" width="230" x="299" y="370" as="geometry">
+            <mxRectangle height="30" width="120" x="-200" y="110" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S7z_CHEJxrtu_Kwbffms-23" parent="S7z_CHEJxrtu_Kwbffms-22" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;strokeColor=light-dark(default, #121212);" value="-questionList: questions[]&lt;div&gt;-actuellIndex&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;: int&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;-score: int&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="74" width="230" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="S7z_CHEJxrtu_Kwbffms-24" parent="S7z_CHEJxrtu_Kwbffms-22" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="230" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="S7z_CHEJxrtu_Kwbffms-25" parent="S7z_CHEJxrtu_Kwbffms-22" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+nextQuestion(): question&lt;div&gt;+rateawnser(awnser: String): void&lt;/div&gt;&lt;div&gt;+getScor(): int&amp;nbsp;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="72" width="230" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="S7z_CHEJxrtu_Kwbffms-34" edge="1" parent="1" source="S7z_CHEJxrtu_Kwbffms-16" style="endArrow=none;html=1;rounded=0;exitX=1.006;exitY=-0.009;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.006;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" target="S7z_CHEJxrtu_Kwbffms-23" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-30" y="580" as="sourcePoint" />
+            <mxPoint x="20" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S7z_CHEJxrtu_Kwbffms-39" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Quiz.-GUI&amp;nbsp;" vertex="1">
+          <mxGeometry height="190" width="230" x="-110" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="S7z_CHEJxrtu_Kwbffms-40" parent="S7z_CHEJxrtu_Kwbffms-39" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="-startButton: JButton&lt;div&gt;-awnserButton: Jbutton[]&lt;/div&gt;&lt;div&gt;-question: Jlabel&lt;/div&gt;&lt;div&gt;-feedbackpicture: JLabel&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="104" width="230" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="S7z_CHEJxrtu_Kwbffms-41" parent="S7z_CHEJxrtu_Kwbffms-39" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="230" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="S7z_CHEJxrtu_Kwbffms-42" parent="S7z_CHEJxrtu_Kwbffms-39" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+actionPerformed(e: ActionEvent): void&lt;div&gt;+updateView(text: String): void&amp;nbsp;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="52" width="230" y="138" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
