@@ -3,11 +3,11 @@ public class Questions {
     private String[]  antworten;
     private String bildPfad;
     private int korrekterIndex;
-    public Questions(String fragestellung,String[] antworten , int korrekterIndex,String bildPfad){
+    public Questions(String fragestellung,String[] antworten , int korrekterIndex){
         this.fragestellung=fragestellung;
         this.antworten=antworten;
         this.korrekterIndex=korrekterIndex;
-        this.bildPfad=bildPfad;
+
     }
     public String getFragestellung(){
         return fragestellung;
