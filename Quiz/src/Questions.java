@@ -22,4 +22,9 @@ public class Questions {
     public boolean istRichtig(int chosedIndex){
         return chosedIndex==korrekterIndex;
     }
+
+
+    public String getQuestionText(){
+        return this.fragestellung;
+    }
 }

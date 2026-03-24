@@ -50,6 +50,11 @@ public class MainGui extends JFrame {
 
             add(startButton);
 
+            startButton.addActionListener(e->{
+                new ShowQuestionGui();
+                this.dispose();
+            });
+
             // Fenster sichtbar machen (immer am Ende!)
 
             setVisible(true);
