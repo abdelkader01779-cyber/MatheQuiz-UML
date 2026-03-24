@@ -44,4 +44,11 @@ public class QuizManager {
     public int getFortschritt() {
         return aktuellerIndex;
     }
+    public void setFortschritt(int aktuellerIndex){
+        this.aktuellerIndex=aktuellerIndex;
+    }
+
+    public List<Questions> getFragenListe() {
+        return this.fragenListe;
+    }
 }
