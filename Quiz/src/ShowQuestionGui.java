@@ -90,19 +90,16 @@ public class ShowQuestionGui extends JFrame {
 
     }
     private void checkAwnser(int chosenIndex){
-        if(manager.checkAnswer(chosenIndex)){
-            manager.setFortschritt(manager.getFortschritt()+1);
-
+        if(manager.checkAnswer(chosenIndex)) {
+        }
+        manager.setFortschritt(manager.getFortschritt()+1);
             if(manager.getFortschritt()<manager.getFragenListe().size()){
                 aktualissierteFrage();
             }else{
-                JOptionPane.showMessageDialog(this,"Richtig");
+               new ResultGui(this.manager);
                 this.dispose();
             }
-        }else{
 
-            this.dispose();
-        }
     }
 
     private void aktualissierteFrage() {
