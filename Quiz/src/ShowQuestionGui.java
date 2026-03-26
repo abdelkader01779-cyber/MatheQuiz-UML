@@ -13,6 +13,7 @@ public class ShowQuestionGui extends JFrame {
     private QuizManager manager;
 
 
+
     public ShowQuestionGui() {
         setTitle("Anzeige Quiz");
         setSize(1000, 600);
@@ -90,20 +91,17 @@ public class ShowQuestionGui extends JFrame {
 
     }
     private void checkAwnser(int chosenIndex){
-        if(manager.checkAnswer(chosenIndex)){
-            manager.setFortschritt(manager.getFortschritt()+1);
-
-            if(manager.getFortschritt()<manager.getFragenListe().size()){
-                aktualissierteFrage();
-            }else{
-                JOptionPane.showMessageDialog(this,"Richtig");
-                this.dispose();
-            }
+        if(manager.checkAnswer(chosenIndex)) {
+        }
+        manager.setFortschritt(manager.getFortschritt()+1);
+        if(manager.getFortschritt()<manager.getFragenListe().size()){
+            aktualissierteFrage();
         }else{
-
+            new ResultGui(this.manager);
             this.dispose();
         }
-    }
+
+        }
 
     private void aktualissierteFrage() {
         Questions q =manager.getFragenListe().get(manager.getFortschritt());
@@ -116,6 +114,8 @@ public class ShowQuestionGui extends JFrame {
         awnserButton[1].setText(antwortenArray[1]);
         awnserButton[2].setText(antwortenArray[2]);
     }
+
+
 
 
 }
