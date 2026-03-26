@@ -7,7 +7,8 @@ import javax.imageio.ImageIO;
 
 public class MainGui extends JFrame {
     public static void main (String[]args) {
-        new MainGui();} {
+        new MainGui();}
+    {
             // 1. Fenster-Grundlagen
             setTitle("Mein Quiz");
             setSize(1000, 600);

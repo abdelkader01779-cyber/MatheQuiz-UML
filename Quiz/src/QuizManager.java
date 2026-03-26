@@ -3,7 +3,7 @@ import java.util.List;
 public class QuizManager {
     private List<Questions> fragenListe;
     private int aktuellerIndex;
-    private int punktestand;
+    private int punktestand=0;
 
     public QuizManager() {
         this.fragenListe = QuestionList.getAlleFragen();
